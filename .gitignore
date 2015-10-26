@@ -55,3 +55,192 @@ docs/_build/
 
 # PyBuilder
 target/
+
+#Eclipse GitIgnore
+*.pydevproject
+.metadata
+.gradle
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+
+# Eclipse Core
+.project
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# TeXlipse plugin
+.texlipse
+
+#Arduino git ignore 
+app/bin/
+app/pde.jar
+build/macosx/work/
+arduino-core/bin/
+arduino-core/arduino-core.jar
+hardware/arduino/bootloaders/caterina_LUFA/Descriptors.o
+hardware/arduino/bootloaders/caterina_LUFA/Descriptors.lst
+hardware/arduino/bootloaders/caterina_LUFA/Caterina.sym
+hardware/arduino/bootloaders/caterina_LUFA/Caterina.o
+hardware/arduino/bootloaders/caterina_LUFA/Caterina.map
+hardware/arduino/bootloaders/caterina_LUFA/Caterina.lst
+hardware/arduino/bootloaders/caterina_LUFA/Caterina.lss
+hardware/arduino/bootloaders/caterina_LUFA/Caterina.elf
+hardware/arduino/bootloaders/caterina_LUFA/Caterina.eep
+hardware/arduino/bootloaders/caterina_LUFA/.dep/
+build/*.zip
+build/*.tar.bz2
+build/windows/work/
+build/windows/*.zip
+build/windows/*.tgz
+build/windows/libastylej*
+build/windows/arduino-*.zip
+build/windows/dist/*.tar.gz
+build/windows/dist/*.tar.bz2
+build/windows/launch4j-*.tgz
+build/windows/launch4j-*.zip
+build/windows/launcher/launch4j
+build/windows/WinAVR-*.zip
+build/macosx/arduino-*.zip
+build/macosx/dist/*.tar.gz
+build/macosx/dist/*.tar.bz2
+build/macosx/*.tar.bz2
+build/macosx/libastylej*
+build/macosx/appbundler*.jar
+build/macosx/appbundler*.zip
+build/macosx/appbundler
+build/macosx/appbundler-1.0ea-arduino?
+build/macosx/appbundler-1.0ea-arduino*.zip
+build/macosx/appbundler-1.0ea-upstream*.zip
+build/linux/work/
+build/linux/dist/*.tar.gz
+build/linux/dist/*.tar.bz2
+build/linux/*.tgz
+build/linux/*.tar.xz
+build/linux/*.tar.bz2
+build/linux/*.zip
+build/linux/libastylej*
+build/shared/reference*.zip
+build/shared/Edison*.zip
+build/shared/Galileo*.zip
+test-bin
+*.iml
+.idea
+.DS_Store
+.directory
+hardware/arduino/avr/libraries/Bridge/examples/XivelyClient/passwords.h
+avr-toolchain-*.zip
+/app/nbproject/private/
+/arduino-core/nbproject/private/
+/app/build/
+/arduino-core/build/
+
+manifest.mf
+nbbuild.xml
+nbproject
+
+# IDEA Ignores #
+################
+*.iml
+*.ipr
+*.iws
+.idea/
+out/
+local.properties
+
+# Generic Android ignores #
+###########################
+bin/
+target
+gen/
+
+# Built Application Files
+###########################
+*.apk
+*.ap_
+
+# Files for the dex VM
+###########################
+*.dex
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+log/
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# VCS #
+#######
+.svn
+.svn/
+CVS
+
+# XCode 5 #
+###########
+*.xcuserstate
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+DerivedData
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+

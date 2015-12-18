@@ -1,6 +1,6 @@
 import pexpect
 
-class ArduinoInterface():
+class ArduinoInterface(object):
 
     def __init__(self):
         self.child = pexpect.spawn('Printrun/pronsole.py');

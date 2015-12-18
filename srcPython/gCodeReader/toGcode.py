@@ -1,19 +1,19 @@
-def toGcode(aletter):
-# Map/dictionary
-    gcodelib={};
-    let=['A','B','C','D']; # add in other letters later
-    for letter in let:
-        filename=letter+'Gcode.Dnc';
-        file=open(filename);
-        info=file.read();
-        gcodelib[letter]=info;
+class gCodeParser(object):
+    
+    def __init__(self):
+        self.gCodeLib={}
+        let=['A','B','C','D']; 
+        for letter in let:
+            filename=letter+'Gcode.Dnc';
+            gcodeFile=open(filename);
+            info=gcodeFile.read();
+            self.gCodeLib[letter]=info;
+    
+    #Obtains the right GCode from the Gcode map
+    def toGcode(self,parsedLetter):
+        for key in self.gCodeLib.keys():
+            if key==parsedLetter:
+                print self.gCodeLib[key];
 
-    for key in gcodelib.keys():
-        if key==aletter:
-            print gcodelib[key];
-
-# test function
-print toGcode('B')
-
-
-#print file.read()
+    def stringToArrayParser(self,stringToParse):
+        return list(stringToParse);

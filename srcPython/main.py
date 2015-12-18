@@ -1,5 +1,3 @@
-from TwitterAPIGet import twitterInteractor
+from arduinoInterface.arduinoInterface import ArduinoInterface
 
-twitterInt = twitterInteractor();
-
-print twitterInt.getLatest()
+print 'hi'

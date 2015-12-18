@@ -16,13 +16,3 @@ def getLatest():
     else:
         output = ""
     return output
-
-print getLatest()
-print getLatest()
-print getLatest()
-api.PostUpdate("yes")
-print getLatest()
-print getLatest()
-api.PostUpdate("yes")
-print getLatest()
-print getLatest()

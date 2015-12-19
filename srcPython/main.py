@@ -1,3 +1,9 @@
-from arduinoInterface.arduinoInterface import ArduinoInterface
+from gCodeReader.toGcode import *
+from interfaces.arduinoInterfaces import *
 
-print 'hi'
+parser = gCodeParser()
+lol = parser.stringToArrayParser('ABCD')
+print lol
+
+for k in lol:
+    print parser.toGcode(k)

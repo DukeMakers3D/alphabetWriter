@@ -1,5 +1,5 @@
-from gCodeReader.toGcode import *
-from interfaces.arduinoInterface import *
+from gCodeReader.toGcode import gCodeParser
+from interfaces.arduinoInterface import ArduinoInterface
 from repeatedFunction import RepeatedTimer
 from TwitterAPIGet import twitterInteractor
 
@@ -12,15 +12,15 @@ twitterAPI = twitterInteractor()
 def checkTweet():
     tweet = twitterAPI.getLatest()
     if tweet!=None:
-	print tweet;
+        print tweet;
         sendToPrint(tweet);
     
 def sendToPrint(message):
-     arrayMessage = parser.stringToArrayParser(message)
-     for parsedCharacter in arrayMessage:
-         gCodes = parser.toGcode(parsedCharacter);
-	 print gCodes;
-         ardInterface.sendGCode(gCodes);
+    arrayMessage = parser.stringToArrayParser(message)
+    for parsedCharacter in arrayMessage:
+        gCodes = parser.toGcode(parsedCharacter);
+        print gCodes;
+        ardInterface.sendGCode(gCodes);
 
 print 'connecting to arduino';
 ardInterface.connectToArd();        

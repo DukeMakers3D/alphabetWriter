@@ -1,14 +1,13 @@
 from arduinoInterface import *
 
 ardInterface = ArduinoInterface();
-
+print 'connecting to Ard';
 ardInterface.connectToArd();
-
-ardInterface.sendGCode('G0 X0');
-
-ardInterface.sendGCode('G0 X50');
-
-ardInterface.sendGCode('G0 X0');
+print 'connected yahoo'
 
 ardInterface.sendGCode('G0 X100');
+
+ardInterface.sendGCode('G0 X98');
+
+ardInterface.sendGCode('G0 X1');
 

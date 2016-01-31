@@ -12,8 +12,9 @@ twitterAPI = twitterInteractor()
 def checkTweet():
     tweet = twitterAPI.getLatest()
     if tweet!=None:
-        print tweet;
         sendToPrint(tweet);
+    else:
+        print 'do nothing'
     
 def sendToPrint(message):
     arrayMessage = parser.stringToArrayParser(message)
@@ -23,7 +24,7 @@ def sendToPrint(message):
         ardInterface.sendGCode(gCodes);
 
 print 'connecting to arduino';
+print 'changes are in effect';
 ardInterface.connectToArd();        
+#checkTweet()
 repeatFn = RepeatedTimer(2.0,checkTweet);
-
-

@@ -6,8 +6,8 @@ class gCodeParser(object):
         self.gCodeLib={}
         let=['A','B','C','D']; 
         for letter in let:
-            #filename='gCodeReader/' + letter + 'Gcode.Dnc';
-            filename = letter + 'Gcode.Dnc'
+            filename='gCodeReader/' + letter + 'Gcode.Dnc';
+            #filename = letter + 'Gcode.Dnc'
             gcodeFile=open(filename);
             info=gcodeFile.read();
             self.gCodeLib[letter]=info;

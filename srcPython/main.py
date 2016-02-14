@@ -10,6 +10,7 @@ twitterAPI = twitterInteractor()
 
 
 def checkTweet():
+    print "finding twitter message";
     tweet = twitterAPI.getLatest()
     if tweet!=None:
         sendToPrint(tweet);
@@ -20,7 +21,6 @@ def sendToPrint(message):
     arrayMessage = parser.stringToArrayParser(message)
     for parsedCharacter in arrayMessage:
         gCodes = parser.toGcode(parsedCharacter);
-        print gCodes;
         ardInterface.sendGCode(gCodes);
 
 print 'connecting to arduino';
